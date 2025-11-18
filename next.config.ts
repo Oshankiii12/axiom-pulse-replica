@@ -1,7 +1,8 @@
-import type { NextConfig } from "next";
+// next.config.ts
+const nextConfig = {
+  serverExternalPackages: [], // 👈 Correct field now
 
-const nextConfig: NextConfig = {
-  /* config options here */
+  turbopack: {}, // safe to leave
 };
 
 export default nextConfig;
